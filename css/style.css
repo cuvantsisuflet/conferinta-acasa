@@ -8,6 +8,75 @@ body {
     font-size: 1.3rem;
     font-family: 'Cabin', sans-serif;
     background: #Eff1f3;
+    overflow: hidden;
+}
+
+.foreground {
+    display: flex;
+}
+
+.left-side {
+    height: 100vh;
+    background-color: #8e9da4;
+    width: 20%;
+    text-align: right;
+}
+
+.main-content {
+    width: 80%;
+    height: 100vh;
+}
+
+.content-title {
+    height: 20%;
+    padding-right: 20%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.friday-section,
+.sunday-section {
+    height: 20%;
+}
+
+.saturday-section {
+    height: 40%;
+}
+
+.day-title {
+    background-color: #b08e61;
+    width: 30%;
+    border-radius: 4px;
+    padding-left: 5rem;
+    margin-left: -4rem;
+    text-transform: uppercase;
+}
+
+.day-section-content {
+    padding-left: 1rem;
+}
+
+.section-content {
+    padding-left: 2rem;
+}
+
+.quote {
+    color: #1e5222;
+    font-style: italic;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.left-side p {
+    padding-right: 1rem;
+}
+
+.padding-t-b {
+    padding: 0.6rem 0;
 }
 
 a {
@@ -23,16 +92,6 @@ a {
 .logo > .accent {
     font-weight: 300;
     color: #FE8F2D;
-}
-
-.main-header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: #1b4353;
 }
 
 .promo-image {
@@ -100,18 +159,6 @@ a {
     margin: 10px;
 }
 
-.main-header .foreground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .description {
     margin: 50px 0;
 }
@@ -120,37 +167,27 @@ a {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1000px) {
-    .main-header .foreground {
-        flex-direction: column;
+@media only screen and (max-width: 600px) {
+
+    .main-content {
+        padding-right: 1rem;
     }
 
-    .details {
-        order: 1;
+    .day-title {
+        width: 60%;
+        margin-left: -3.5rem;
+        padding-left: 3.8rem
     }
 
-    .promo-image {
-        order: 0;
+    .day-section-content {
+        padding-left: 0.4rem;
+    }
+    
+    .section-content {
+        padding-left: 1rem;
     }
 
-    .copyright {
-        order: 2;
-    }
-
-    .details {
-        width: 100%;
-    }
-
-    .copyright {
-        margin-top: 10px;
-        position: relative;
-    }
-
-    .promo-image img {
-        width: 300px;
-    }
-
-    .inner {
-        padding: 60px;
+    .left-side p {
+        padding-right: 0.4rem;
     }
 }
