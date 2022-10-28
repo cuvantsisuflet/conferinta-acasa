@@ -28,7 +28,7 @@ body {
 }
 
 .content-title {
-    height: 20%;
+    height: 10%;
     padding-right: 20%;
     font-size: 3rem;
     display: flex;
@@ -42,7 +42,7 @@ body {
 }
 
 .saturday-section {
-    height: 40%;
+    height: 30%;
 }
 
 .day-title {
